@@ -1,0 +1,2 @@
+# Force apex (adjust in Cloudflare if you prefer www)
+https://www.nicholasoliveoil.com/* https://nicholasoliveoil.com/:splat 301

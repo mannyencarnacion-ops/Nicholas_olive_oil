@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nicholasoliveoil.com/sitemap.xml
