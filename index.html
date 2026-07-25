@@ -459,7 +459,7 @@
   // ---- Square commerce config: replace "#" with your real Square checkout links ----
   // Interim: all buttons fall back to your Square Online store URL below.
   const STORE_URL = "https://nicholas-olive-oil.square.site";
-  const BUY = { s250:"#", s750:"#", s1l:"#", duo:"#" };
+  const BUY = { s250:"#", s750:"https://checkout.square.site/merchant/MLX3FKGMZKSNE/checkout/Z5KLD3GXGC5IT2NCZTJPYPXS", s1l:"#", duo:"#" };
   document.querySelectorAll('[data-buy]').forEach(function(btn){
     btn.addEventListener('click', function(){
       var key = btn.getAttribute('data-buy');
