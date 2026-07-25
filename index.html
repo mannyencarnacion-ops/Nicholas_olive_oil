@@ -136,10 +136,10 @@
   .grid-p{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:52px}
   .card{background:var(--cream);border:1px solid var(--line);border-radius:3px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
   .card:hover{transform:translateY(-8px);box-shadow:0 28px 50px rgba(44,58,34,.16)}
-  .card-img{aspect-ratio:1/1;background:linear-gradient(165deg,#46583b,#2C3A22);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .card-img{aspect-ratio:1/1;background:#e7dfce;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
   .card-img .b{width:52%;transition:transform .6s var(--ease)}
-  .card-img .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
-  .card:hover .card-img .ph{transform:scale(1.05)}
+  .card-img .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;transform-origin:center bottom;transform:scale(var(--s,1));transition:transform .5s var(--ease)}
+  .card:hover .card-img .ph{transform:scale(calc(var(--s,1) * 1.04))}
   .bottle-stage img{position:relative;z-index:1;width:100%;border-radius:12px;box-shadow:0 34px 66px rgba(0,0,0,.5)}
   .story-visual img,.gift-visual img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
   .card:hover .card-img .b{transform:scale(1.07) translateY(-4px)}
@@ -318,19 +318,19 @@
     </div>
     <div class="grid-p">
       <div class="card reveal" data-d="1">
-        <div class="card-img"><span class="tag">Gift-ready</span><img class="ph" src="/assets/product-250.png" alt="Nicholas 250ml olive oil bottle" loading="lazy"></div>
+        <div class="card-img"><span class="tag">Gift-ready</span><img class="ph" style="--s:.86" src="/assets/product-250.png" alt="Nicholas 250ml olive oil bottle" loading="lazy"></div>
         <div class="card-body"><h3>250ml</h3><p class="use">The perfect first taste — or a gift. Small, giftable, full flavor.</p><div class="card-row"><span class="price">$17</span><button class="buy" data-buy="s250">Add</button></div></div>
       </div>
       <div class="card reveal" data-d="2">
-        <div class="card-img"><span class="tag">Best seller</span><img class="ph" src="/assets/product-750.png" alt="Nicholas 750ml olive oil bottle" loading="lazy"></div>
+        <div class="card-img"><span class="tag">Best seller</span><img class="ph" style="--s:1.06" src="/assets/product-750.png" alt="Nicholas 750ml olive oil bottle" loading="lazy"></div>
         <div class="card-body"><h3>750ml</h3><p class="use">The hero bottle. Enough to cook with and finish with, all season.</p><div class="card-row"><span class="price">$42</span><button class="buy" data-buy="s750">Add</button></div></div>
       </div>
       <div class="card reveal" data-d="3">
-        <div class="card-img"><span class="tag">Best value</span><img class="ph" src="/assets/product-1l.png" alt="Nicholas 1 liter olive oil bottle" loading="lazy"></div>
+        <div class="card-img"><span class="tag">Best value</span><img class="ph" style="--s:1.16" src="/assets/product-1l.png" alt="Nicholas 1 liter olive oil bottle" loading="lazy"></div>
         <div class="card-body"><h3>1 Liter</h3><p class="use">For people who cook with the good stuff. Better value per pour.</p><div class="card-row"><span class="price">$54</span><button class="buy" data-buy="s1l">Add</button></div></div>
       </div>
       <div class="card reveal" data-d="3">
-        <div class="card-img"><span class="tag">Gift Duo</span><img class="ph" src="/assets/product-duo.png" alt="Nicholas gift duo — two bottles" loading="lazy"></div>
+        <div class="card-img"><span class="tag">Gift Duo</span><img class="ph" style="--s:1.0" src="/assets/product-duo.png" alt="Nicholas gift duo — two bottles" loading="lazy"></div>
         <div class="card-body"><h3>Gift Duo</h3><p class="use">Two 750ml bottles, boxed. Made for hostess gifts and holidays.</p><div class="card-row"><span class="price">$78</span><button class="buy" data-buy="duo">Add</button></div></div>
       </div>
     </div>
